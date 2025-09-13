@@ -24,17 +24,7 @@
               NAME: { type: Scratch.ArgumentType.STRING, defaultValue: "username" }
             }
           },
-          {
-            opcode: "getStatus",
-            blockType: Scratch.BlockType.REPORTER,
-            text: "recent file status"
-          },
-          {
-            opcode: "toggleEncode",
-            blockType: Scratch.BlockType.COMMAND,
-            text: "toggle file encoding [TYPE]",
-            arguments: { TYPE: { type: Scratch.ArgumentType.STRING, menu: "TOGGLE" } }
-          },
+          
           ...(dangerousBlocksHidden ? ["---"] : []),
           { blockType: Scratch.BlockType.LABEL, text: "File Control", hideFromPalette: dangerousBlocksHidden },
 
